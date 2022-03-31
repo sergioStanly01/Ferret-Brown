@@ -12,7 +12,7 @@
 
 .di-txt{
     width: 100%; height: auto; font-size: 25px; font-family: 'Courier New', Courier, monospace;
-    justify-content: center; align-items: center; display: flex; 
+    justify-content: center; align-items: center; display: flex; text-align: center;
 }
 
 .btn-log-reg{
@@ -23,7 +23,8 @@
 
 .di-frm-log-reg{
     background-color:transparent; justify-content: left; align-items: flex-start; display: flex;
-    width: 100%; height: 300px; overflow-y: hidden; overflow-x: hidden;
+    width: 100%; height: 300px; overflow-y: hidden; overflow-x: hidden; 
+    
 }
 
 .frm-log{
@@ -40,7 +41,7 @@
 
 .di-img{
     width: 100%; height: auto; justify-content: center; align-items: center;
-    display: flex; border-bottom: 2px solid rgb(0, 0, 0, .1);
+    display: flex; 
 }
 
 .img-log-reg {
@@ -91,3 +92,44 @@
 .btn-log-reg:hover{
     background-color: var(--color1); color: white;
 }
+
+@media only screen and (max-width: 800px) {
+    
+.di-frm-log-reg{
+        border-left: 2px solid rgb(0, 0, 0, .1); padding: 0 0 0 10px;
+    } 
+.di-frm-1{
+    justify-content: left; align-items: center; display: flex;
+    max-width: auto; margin-right: 20px;
+} 
+.di-txt-img{
+    display: block; min-width: 150px; max-width: 150px; margin-right: 10px;
+    padding: 0 10px;
+}
+.di-btn-log-reg{
+    position: absolute; bottom: 10px; left: 10px; justify-content: center; align-items: center;
+    display: flex; min-width: 150px; max-width: 150px;
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+.di-frm{
+    justify-content: center; align-items: center; display: flex;
+}
+.di-frm-1{
+     margin-right: 0px; display: block;
+}  
+.di-frm-log-reg{
+    border: none; padding: 0px;
+}
+.di-txt-img{
+    width: 100%; background-color: transparent; margin-left: auto;
+    margin-right: auto;
+}
+.di-btn-log-reg{
+    position: relative; 
+}
+    }
