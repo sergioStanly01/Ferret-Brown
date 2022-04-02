@@ -1,13 +1,23 @@
 .di-frm{
     position: fixed; top: 0; bottom: 0; left: 0; right: 0; 
-    justify-content: right; align-items: center; display: flex;
-    background-color: var(--color1);
+    justify-content: center; align-items: center; display: flex;
+    background: var(--color2); flex-wrap: wrap;
+}
+
+.di-uro{
+    width: 100%; max-width: 400px; height: auto;
+    justify-content: center; align-items: center;
+    display: flex; margin-right: 40px; margin-left: 40px;
+}
+
+.img-uro{
+    height: 90%; max-height: 570px; 
 }
 
 .di-frm-1{
-    background-color: white; position: relative; margin-right: 100px;
+    background-color: white; position: relative;  margin-right: 40px; margin-left: 40px;
     width: calc(100% - 10px); max-width: 400px; height: auto;
-    border-radius: 5px; padding: 15px 10px;
+    border-radius: 5px; padding: 15px 10px; max-height: 600px;
 }
 
 .di-txt{
@@ -34,7 +44,7 @@
 
 .di-log-item{
     width: calc(100% - 10px); height: 50px; margin-left: auto; margin-right: auto;
-    background-color: transparent; transition: .5s ease all;
+    background-color: transparent; transition: .5s ease all; position: relative;
     margin-bottom: 10px; justify-content: left; align-items: center; display: flex;
     border-radius: 3px; border: 1.5px solid rgb(0, 0, 0, .3); 
 }
@@ -57,6 +67,10 @@
     background-color: transparent; border: none; outline: none;
     width: 100%; height: 50px; padding: 0 10px;
 }
+.lbl-log-itm{
+    background-color: transparent; transition: .5s ease all; position: absolute; top: 0; left: 45px; pointer-events: none;
+    width: auto; height: 100%; padding: 0 10px; justify-content: left; align-items: center; display: flex;
+}
 
 .di-log-btn{
     background-color: transparent; justify-content: center; align-items: center; display: flex;
@@ -66,7 +80,7 @@
 
 .btn-log{
     background-color: var(--color1); color: white; border: none; border-radius: 3px;
-    width: calc(100% - 10px); height: 100%;
+    width: calc(100% - 10px); height: 100%; border: 1.5px solid var(--color1);
     cursor: pointer; transition: .3s ease all;
 }
 /* ACCIONES*/
@@ -81,6 +95,8 @@
     opacity: 0;
 }
 
+.ipt-log-itm:is(:focus, :valid) + .lbl-log-itm{ background-color: white; height: 20px; top: -10px; left: 35px; }
+
 .btn-log:hover{
     background-color: transparent; color: var(--color1);
 }
@@ -93,43 +109,18 @@
     background-color: var(--color1); color: white;
 }
 
-@media only screen and (max-width: 800px) {
-    
-.di-frm-log-reg{
-        border-left: 2px solid rgb(0, 0, 0, .1); padding: 0 0 0 10px;
-    } 
-.di-frm-1{
-    justify-content: left; align-items: center; display: flex;
-    max-width: auto; margin-right: 20px;
-} 
-.di-txt-img{
-    display: block; min-width: 150px; max-width: 150px; margin-right: 10px;
-    padding: 0 10px;
-}
-.di-btn-log-reg{
-    position: absolute; bottom: 10px; left: 10px; justify-content: center; align-items: center;
-    display: flex; min-width: 150px; max-width: 150px;
-}
-
-
-}
-
-@media only screen and (max-width: 500px) {
-    
-.di-frm{
-    justify-content: center; align-items: center; display: flex;
-}
-.di-frm-1{
-     margin-right: 0px; display: block;
-}  
-.di-frm-log-reg{
-    border: none; padding: 0px;
-}
-.di-txt-img{
-    width: 100%; background-color: transparent; margin-left: auto;
-    margin-right: auto;
-}
-.di-btn-log-reg{
-    position: relative; 
-}
+@media only screen and (max-width: 750px) {
+    .di-frm{
+        flex-wrap: wrap-reverse; overflow-y: auto; overflow-x: hidden;
     }
+    .di-frm::-webkit-scrollbar{ width: 0; height: 0;}
+    .img-uro{
+        height: 90%; max-height: 350px; 
+    }
+    .di-frm-1{
+        max-width: 500px; 
+    }   
+}
+/*
+@media only screen and (max-width: 500px) {
+    }*/
