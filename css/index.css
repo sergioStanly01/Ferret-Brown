@@ -48,7 +48,7 @@
 }
 
 /* acciones */
-.a-pry-2:hover{ filter: blur(5px); }
+.a-pry-2:hover{ filter: blur(0px); }
 .a-pry-2:hover > .img-pry-2{ height: calc(100% - 5px); max-height: 530px;  }
 
 @media only screen and (max-width: 750px) {
