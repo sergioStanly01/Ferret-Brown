@@ -12,3 +12,15 @@ btn.addEventListener('click', ()=>{
     else{ h4_txt.innerHTML = 'Bienvenido de Nuevo'; btn.innerHTML = 'Registro';  txt_val = false;  }
     
 })
+
+const cambio = document.getElementById("ingresar");
+cambio.addEventListener("click",(e)=> {
+    e.preventDefault();
+    location.href = "../dashboard.html"
+})
+
+const soli = document.getElementById("solicitud");
+soli.addEventListener("click",(e)=> {
+    e.preventDefault();
+    location.href = "../dashboard.html"
+})

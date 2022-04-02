@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MAPXIPRESS</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images1/logo.png" alt="">
+                    <h2>MAPX<span class="danger">IPRESS</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        grid_view
+                    </span>
+                    <h3>MAPXIPRESS</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Perfil</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        turned_in
+                    </span>
+                    <h3>Favoritos</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        thumb_up_alt
+                    </span>
+                    <h3>Me gusta</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                    <h3>Notificacion</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="/index.html">
+                    <span class="material-icons-sharp" id="salir">
+                        logout
+                    </span>
+                    <h3>cerrar sesión</h3>
+                </a>
+            </div>
+        </aside>
+        <!--MAAIN-->
+        <main>
+            <h1>MAPXIPRESS</h1>
+            <div class="search">
+                <div class="demo">
+                    <form class="form-search">
+                        <div class="input-group">
+                            <div class="camp-input"></div>
+                            <input class="form-control form-text" maxlength="128" placeholder="ingresar Ubicación"
+                                size="15" type="text" id="input_direccion" />
+                            <select class="form-select">
+                                <option value="">Alergología</option>
+                                <option value="">Anestesiología</option>
+                                <option value="">Cardiología</option>
+                                <option value="">Gastroenterología</option>
+                                <option value="">Endocrinología</option>
+                                <option value="">Geriatría </option>
+                                <option value="">Hematología </option>
+                                <option value="">hemoterapia </option>
+                                <option value="">Hidrología médica</option>
+                                <option value="">Infectología </option>
+                                <option value="">Nefrología</option>
+                                <option value="">Medicina preventiva y salud pública</option>
+                                <option value="">Medicina legal y forense</option>
+                                <option value="">Medicina interna</option>
+                                <option value="">Medicina intensiva</option>
+                                <option value="">Medicina física y rehabilitación</option>
+                                <option value="">Medicina familiar y comunitaria </option>
+                                <option value="">Medicina de urgencias</option>
+                                <option value="">Medicina del trabajo</option>
+                                <option value="">Medicina del deporte</option>
+                                <option value="">Medicina aeroespacial </option>
+                            </select>
+                            <input type="submit" style="width:300px" id="send" class="btn_enviar">
+                            <button id="solicitar" class="solicitar">Rellenar solicitud</button>
+                        </div>
+                        <form>
+                            <p class="clasificacion" id="calificar">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <!--
+                            --><label for="radio1">★</label>
+                                <!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4">
+                                <!--
+                            --><label for="radio2">★</label>
+                                <!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3">
+                                <!--
+                            --><label for="radio3">★</label>
+                                <!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2">
+                                <!--
+                            --><label for="radio4">★</label>
+                                <!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1">
+                                <!--
+                            --><label for="radio5">★</label>
+                            </p>
+                        </form>
+                    </form>
+                </div>
+            </div>
+            <iframe class="map_google"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.753995023335!2d-77.03918008559775!3d-12.06043994543771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c108863d3f%3A0x8fe305ea2ef86a7a!2sMuseo%20de%20Arte%20de%20Lima%20-%20MALI!5e0!3m2!1ses-419!2spe!4v1648742735682!5m2!1ses-419!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="spinner_load" >
+                    <div id="spinner_load"></div>
+                </div>
+            <div class="recent-orders">
+                <h2>Citas reservadas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>local</th>
+                            <th>dirección</th>
+                            <th>teléfono</th>
+                            <th>pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show all</a>
+            </div>
+        </main>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey ,<b>Sergio</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images1/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Comentarios</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/images1/profile-2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike tyson</b> reserved his order</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/images1/profile-3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike tyson</b> reserved his order</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/images1/profile-4.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike tyson</b> reserved his order</p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="insights">
+                    <div class="sales">
+                        <span class="material-icons-sharp">analytics</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Habilidades</h3>
+                                <h1>Mejor juez</h1>
+                            </div>
+                            <div class="progress">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="number">
+                                    <p>75%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/71ceda8fa4.js" crossorigin="anonymous"></script>
+</body>
+<script src="plugins/sweetAlert/dist/sweetalert2.all.min.js"></script>
+
+</html>
