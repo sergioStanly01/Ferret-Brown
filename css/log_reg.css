@@ -81,7 +81,7 @@
 .btn-log{
     background-color: var(--color1); color: white; border: none; border-radius: 3px;
     width: calc(100% - 10px); height: 100%; border: 1.5px solid var(--color1);
-    cursor: pointer; transition: .3s ease all;
+    cursor: pointer; transition: .3s ease all; text-decoration: none; text-align: center;
 }
 /* ACCIONES*/
 .di-log-item:focus-within{

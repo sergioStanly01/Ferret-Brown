@@ -13,8 +13,8 @@ btn.addEventListener('click', ()=>{
     
 })
 
-const cambio = document.getElementById("ingresar");
-cambio.addEventListener("click",(e)=> {
+ //const cambio = document.getElementById("ingresar");
+/*cambio.addEventListener("click",(e)=> {
     e.preventDefault();
     location.href = "../dashboard.html"
 })
@@ -22,5 +22,5 @@ cambio.addEventListener("click",(e)=> {
 const soli = document.getElementById("solicitud");
 soli.addEventListener("click",(e)=> {
     e.preventDefault();
-    location.href = "../dashboard.html"
-})
+    location.href = "..Ferret-Brown/dashboard.html"
+})*/
